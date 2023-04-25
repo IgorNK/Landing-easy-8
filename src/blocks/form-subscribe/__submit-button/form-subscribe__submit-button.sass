@@ -1,0 +1,14 @@
+.form-subscribe__submit-button
+  background: none
+  border: none
+  background-color: $color__inverse
+  color: $color__primary
+  min-height: 44px
+  border: 0.5px solid $color__inverse
+  @include text-button($size: 14px, $height: 143%)
+  cursor: pointer
+  transition: color .1s linear, background-color .1s linear
+
+  &:hover
+    background-color: $color__primary
+    color: $color__inverse

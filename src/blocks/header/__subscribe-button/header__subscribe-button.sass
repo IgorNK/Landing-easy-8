@@ -1,0 +1,14 @@
+.header__subscribe-button
+  @include text-button($size: 14px, $height: 143%)
+  color: $color__inverse
+  background: none
+  border: none
+  background-color: $bg-color__inverse
+  height: 44px
+  margin-top: 32px
+  cursor: pointer
+  transition: color .1s linear, background-color .1s linear
+
+  &:hover
+    background-color: $bg-color__primary
+    color: $color__primary
