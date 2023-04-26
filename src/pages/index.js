@@ -106,7 +106,7 @@ function checkPosition(images) {
   const windowHeight = window.innerHeight;
   for (const image of images) {
     var positionFromTop = image.getBoundingClientRect().top;
-    if (positionFromTop - windowHeight <= -windowHeight / 3) {
+    if (positionFromTop - windowHeight <= -image.clientHeight) {
       image.classList.add('slide-in_visible');
     }
   }
