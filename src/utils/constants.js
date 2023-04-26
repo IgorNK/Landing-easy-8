@@ -3,6 +3,7 @@ const menuSelectors = {
   visible: 'popup-menu_visible',
   closeButton: '.popup-menu__close-button',
   openButton: '.header__menu-button',
+  menuButtons: '.popup-menu__menu-button',
 };
 
 const cardSelectors = {

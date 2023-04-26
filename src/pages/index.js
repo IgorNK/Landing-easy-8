@@ -16,6 +16,9 @@ function addEventListeners() {
   const menuOpenButton = document.querySelector(menuSelectors.openButton);
   const menuCloseButton = document.querySelector(menuSelectors.closeButton);
   const menuPopup = document.querySelector(menuSelectors.popup);
+  const menuButtons = Array.from(
+    document.querySelectorAll(menuSelectors.menuButtons)
+  );
 
   menuOpenButton.addEventListener('click', () => {
     menuPopup.classList.add(menuSelectors.visible);
@@ -23,6 +26,12 @@ function addEventListeners() {
 
   menuCloseButton.addEventListener('click', () => {
     menuPopup.classList.remove(menuSelectors.visible);
+  });
+
+  menuButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      menuPopup.classList.remove(menuSelectors.visible);
+    });
   });
 
   window.addEventListener('resize', setSlideImages);
