@@ -16,31 +16,37 @@
 
     <header class="header page__header">
       <button class="header__menu-button" type="button" aria-label="Menu">Menu</button>
-      <h1 class="header__title">Givenchy<br />
-        Spring Summer 2021<br />
-        by Matthew M. Williams
-      </h1>
-      <button class="header__subscribe-button">Subscribe to collection's news</button>
+      <div class="header__title-container">
+        <h1 class="header__title">Givenchy<br />
+          Spring Summer 2021<br />
+          by Matthew M. Williams
+        </h1>
+        <a class="header__subscribe-button" href="#subscribe">Subscribe to collection's
+          news</a>
+      </div>
     </header>
 
     <main class="page__content">
 
       <section class="about" id="about">
-        <div class="about__text-block">
+        <div class="about__heading-block">
           <h2 class="about__title">About</h2>
           <p class="about__text">The Spring-Summer '21 collection explores Givenchy in the form of a stream of
             consciousness
-            for Williams and is a 'sampler' of what is to come.</p>
+            for Williams and is a 'sampler' of what is to&nbsp; come.</p>
         </div>
 
         <div class="about__quote-block">
-          <img class="about__quote-image" src="<%=require('./images/_0016_1080X13506.jpg')%>" alt="Model photograph">
-          <blockquote class="about__quote-text">"To me, fashion expresses a point of view where formality and
-            informality,
-            construction and comfort co-exist. My ethos is about the luxury of infusing clothes with your own
-            personality,
-            not being worn by them,"</blockquote>
-          <p class="about__quote-text">Matthew M. Williams.</p>
+          <img class="about__quote-image about__quote-image_size_s" src="<%=require('./images/_0016_1080X13506.jpg')%>"
+            alt="Model photograph">
+          <div class="about__quote-container">
+            <blockquote class="about__quote-text">"To me, fashion expresses a point of view where formality and
+              informality,
+              construction and comfort co-exist. My ethos is about the luxury of infusing clothes with your own
+              personality,
+              not being worn by them,"</blockquote>
+            <p class="about__quote-text">Matthew M. Williams.</p>
+          </div>
         </div>
         <div class="about__text-block">
           <img class="about__image" src="<%=require('./images/_0007_1080X135015.jpg')%>" alt="Model photograph">
@@ -55,11 +61,14 @@
         </div>
 
         <div class="about__quote-block">
-          <img class="about__quote-image" src="<%=require('./images/_0020_1080X13502.jpg')%>" alt="Model photograph">
-          <blockquote class="about__quote-text">"In each of these portraits, a strong character wears a look that
-            reflects
-            who they are: they're the ones who bring the clothes to life."</blockquote>
-          <p class="about__quote-text">Matthew M. Williams.</p>
+          <img class="about__quote-image about__quote-image_size_l" src="<%=require('./images/_0020_1080X13502.jpg')%>"
+            alt="Model photograph">
+          <div class="about__quote-container">
+            <blockquote class="about__quote-text">"In each of these portraits, a strong character wears a look that
+              reflects
+              who they are: they're the ones who bring the clothes to life."</blockquote>
+            <p class="about__quote-text">Matthew M. Williams.</p>
+          </div>
         </div>
       </section>
 
@@ -109,7 +118,8 @@
 
     </footer>
 
-    <div class="popup-menu popup-menu_visible">
+    <div class="popup-menu">
+      <!-- <div class="popup-menu popup-menu_visible"> -->
       <div class="popup-menu__container">
         <button class="popup-menu__close-button" type="button"></button>
         <nav>

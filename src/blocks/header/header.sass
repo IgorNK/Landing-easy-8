@@ -1,11 +1,21 @@
 .header
   margin: 0
   padding: 0
-  height: 426px
+  min-height: 426px
   background-color: $bg-color__header
   background-image: $bg-header-image
   background-repeat: no-repeat
   background-size: auto 100%
-  background-position-x: center
+  background-position-x: 0
   display: flex
-  flex-direction: column
+  justify-content: flex-end
+  align-items: center
+  position: relative
+
+  @media (min-width: $screen-tablet)
+    min-height: 646px
+
+  @media (min-width: $screen-desktop)
+    min-height: 900px
+    background-position-x: 15px
+    background-size: auto 105%
