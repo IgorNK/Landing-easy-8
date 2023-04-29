@@ -3,11 +3,14 @@
   border: 0.5px solid $color__inverse
   min-height: 44px
   @include text-paragraph($size: 16px, $height: 150%)
-  color: $color__inverse_muted
+  color: $color__inverse
   text-align: center
   width: 100%
   padding: 9px 20px
   box-sizing: border-box
+
+  &:placeholder
+    color: $color__inverse_muted
 
   @media (min-width: $screen-tablet)
     text-align: start

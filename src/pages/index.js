@@ -5,6 +5,7 @@ import './style.sass';
 import {
   menuSelectors,
   cardSelectors,
+  formSelectors,
   fadeTime,
   changeInterval,
   changeAmount,
@@ -32,6 +33,11 @@ function addEventListeners() {
     button.addEventListener('click', () => {
       menuPopup.classList.remove(menuSelectors.visible);
     });
+  });
+
+  const formSubscribe = document.querySelector(formSelectors.formSubscribe);
+  formSubscribe.addEventListener('submit', (evt) => {
+    evt.preventDefault();
   });
 
   window.addEventListener('resize', setSlideImages);
