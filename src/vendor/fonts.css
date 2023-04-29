@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Prompt-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Prompt-Medium.otf') format('opentype');
+}

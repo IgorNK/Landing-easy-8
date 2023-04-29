@@ -1,0 +1,17 @@
+.popup-menu__container
+  position: relative
+  padding: 20px
+  width: 100%
+  background-color: $bg-color__menu
+  min-height: 360px
+  display: grid
+  grid-template-rows: min-content auto
+  align-items: center
+  box-sizing: border-box
+  left: -100%
+  transition: 0.1s left linear
+
+  @media (min-width: $screen-tablet)
+    height: 100%
+    width: 480px
+    align-items: flex-start

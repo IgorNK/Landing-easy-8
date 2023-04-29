@@ -1,0 +1,16 @@
+.looks__image-grid
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: repeat(4, 1fr)
+  width: 100%
+  aspect-ratio: 0.40229885
+  grid-auto-flow: column
+
+  @media (min-width: $screen-tablet)
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    aspect-ratio: 1.20695364
+
+  @media (min-width: $screen-desktop)
+    grid-template-columns: repeat(4, 1fr)
+    aspect-ratio: 1.60550459

@@ -1,0 +1,26 @@
+.header__menu-button
+  position: absolute
+  @include text-button($size: 14px, $height: 143%)
+  width: 87px
+  height: 24px
+  text-align: right
+  background: none
+  border: none
+  background-image: $menu-icon
+  background-size: 24px 24px
+  background-repeat: no-repeat
+  cursor: pointer
+  transition: opacity linear 0.1s
+  left: 20px
+  top: 16px
+
+  &:hover
+    opacity: 0.6
+
+  @media (min-width: $screen-tablet)
+    top: 20px
+    width: 116px
+    height: 48px
+    background-size: 48px 48px
+    font-size: 16px
+    line-height: 150%

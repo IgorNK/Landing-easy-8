@@ -1,0 +1,25 @@
+.header__subscribe-button
+  @include text-button($size: 14px, $height: 143%)
+  display: flex
+  color: $color__inverse
+  background: none
+  border: none
+  background-color: $bg-color__inverse
+  min-height: 44px
+  margin-top: 32px
+  cursor: pointer
+  width: 100%
+  max-width: 350px
+  transition: color .1s linear, background-color .1s linear
+  text-decoration: none
+  align-items: center
+  justify-content: center
+
+  &:hover
+    background-color: $bg-color__primary
+    color: $color__primary
+
+  @media (min-width: $screen-tablet)
+    font-size: 16px
+    line-height: 150%
+    min-height: 48px
